@@ -5,6 +5,7 @@
   <title>Café Bistro – Complete Menu</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
+
     body {
       background: #fbf8f4;
       color: #3d3d3d;
@@ -12,31 +13,52 @@
       margin: 0;
       padding: 0;
     }
+
     header {
-      background: #3f3f3f url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&fit=crop&h=400&q=80&w=1600') center/cover no-repeat;
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&fit=crop&h=400&q=80&w=1600') center/cover no-repeat;
       color: #f5f5f5;
       text-align: center;
       padding: 3rem 1rem;
     }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+      z-index: 1;
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 2;
+    }
+
     header h1 {
       font-family: 'Playfair Display', serif;
       font-size: 3rem;
       margin: 0;
       letter-spacing: 1px;
     }
+
     header p {
       margin-top: .75rem;
       font-size: 1.1rem;
       color: #ddd;
     }
+
     .container {
       max-width: 1100px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
+
     .section {
       margin-bottom: 2.5rem;
     }
+
     .section h2 {
       font-family: 'Playfair Display', serif;
       font-size: 2rem;
@@ -45,25 +67,30 @@
       display: inline-block;
       padding-bottom: .3rem;
     }
+
     .menu-item {
       display: flex;
       justify-content: space-between;
       padding: .75rem 0;
       border-bottom: 1px dashed #ddd;
     }
+
     .menu-item .name {
       font-weight: 600;
     }
+
     .menu-item .desc {
       font-size: 0.9rem;
       color: #666;
       font-style: italic;
       margin-top: .3rem;
     }
+
     .menu-item .price {
       font-family: 'Playfair Display', serif;
       color: #7a3e1d;
     }
+
     footer {
       background: #3f3f3f;
       color: #ccc;
@@ -235,6 +262,7 @@
       <div class="price">₹220</div>
     </div>
   </div>
+
 </div>
 
 <footer>
