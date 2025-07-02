@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Café Bistro – Complete Menu</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
+    body {
+      background: #fbf8f4;
+      color: #3d3d3d;
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #3f3f3f url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?crop=entropy&fit=crop&h=400&q=80&w=1600') center/cover no-repeat;
+      color: #f5f5f5;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: .75rem;
+      font-size: 1.1rem;
+      color: #ddd;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .section {
+      margin-bottom: 2.5rem;
+    }
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #3f3f3f;
+      border-bottom: 3px solid #d3a87c;
+      display: inline-block;
+      padding-bottom: .3rem;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: .75rem 0;
+      border-bottom: 1px dashed #ddd;
+    }
+    .menu-item .name {
+      font-weight: 600;
+    }
+    .menu-item .desc {
+      font-size: 0.9rem;
+      color: #666;
+      font-style: italic;
+      margin-top: .3rem;
+    }
+    .menu-item .price {
+      font-family: 'Playfair Display', serif;
+      color: #7a3e1d;
+    }
+    footer {
+      background: #3f3f3f;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Café Bistro</h1>
+  <p>Warmth • Elegance • Vegetarian Comfort</p>
+</header>
+
+<div class="container">
+
+  <div class="section">
+    <h2>Hot Beverages</h2>
+    <div class="menu-item">
+      <div>
+        <div class="name">Classic Cappuccino</div>
+        <div class="desc">Velvety foam over rich espresso.</div>
+      </div>
+      <div class="price">₹160</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <div class="name">Mocha Latte</div>
+        <div class="desc">Chocolate espresso with steamed milk.</div>
+      </div>
+      <div class="price">₹180</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <div class="name">Hot Chocolate</div>
+        <div class="desc">Creamy cocoa topped with marshmallows.</div>
+      </div>
+      <div class="price">₹160</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <div class="name">Spiced Masala Chai</div>
+        <div class="desc">Traditional Indian chai with aromatic spices.</div>
+      </div>
+      <div class="price">₹130</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Cold Coffee & Shakes</h2>
+    <div class="menu-item">
+      <div>
+        <div class="name">Cold Coffee Classic</div>
+        <div class="desc">Chilled coffee blended smooth.</div>
+      </div>
+      <div class="price">₹170</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <div class="name">KitKat Shake</div>
+        <div class="desc">Rich shake with KitKat crunch.</div>
+      </div>
+      <div class="price">₹230</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <div class="name">Oreo Shake</div>
+        <div class="desc">Creamy blend of Oreos and milk.</div>
+      </div>
+      <div class="price">₹230</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Sandwiches & Paninis</h2>
+    <div class="menu-item">
+      <div>
+        <div class="name">Peri-Peri Veggie Sandwich</div>
+        <div class="desc">Grilled veggies and spicy peri-peri mayo.</div>
+      </div>
+      <div class="price">₹220</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <div class="name">Cheese Tomato Panini</div>
+        <div class="desc">Mozzarella, fresh tomato, basil pesto.</div>
+      </div>
+      <div class="price">₹210</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <div class="name">Truffle Mushroom Panini</div>
+        <div class="desc">Wild mushrooms, truffle oil, melted cheese.</div>
+      </div>
+      <div class="price">₹250</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Pizzas</h2>
+    <div class="menu-item">
+      <div>
+        <div class="name">Veg Star Pizza</div>
+        <div class="desc">Capsicum, jalapeños, olives, triple cheese.</div>
+      </div>
+      <div class="price">₹340</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <div class="name">Margherita</div>
+        <div class="desc">Classic tomato basil and mozzarella.</div>
+      </div>
+      <div class="price">₹320</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Pasta</h2>
+    <div class="menu-item">
+      <div>
+        <div class="name">White Sauce Alfredo</div>
+        <div class="desc">Creamy garlic sauce and parmesan.</div>
+      </div>
+      <div class="price">₹280</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <div class="name">Arrabbiata Pasta</div>
+        <div class="desc">Spicy tomato and herb sauce.</div>
+      </div>
+      <div class="price">₹260</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Quick Bites & Sides</h2>
+    <div class="menu-item">
+      <div>
+        <div class="name">Cheese Masala Fries</div>
+        <div class="desc">Golden fries with spiced cheese sauce.</div>
+      </div>
+      <div class="price">₹190</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <div class="name">Garlic Bread</div>
+        <div class="desc">Toasted baguette with garlic butter.</div>
+      </div>
+      <div class="price">₹140</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Desserts</h2>
+    <div class="menu-item">
+      <div>
+        <div class="name">Chocolate Mousse Jar</div>
+        <div class="desc">Silky mousse layered in a jar.</div>
+      </div>
+      <div class="price">₹210</div>
+    </div>
+    <div class="menu-item">
+      <div>
+        <div class="name">Brownie with Ice Cream</div>
+        <div class="desc">Warm brownie topped with vanilla scoop.</div>
+      </div>
+      <div class="price">₹220</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Open 9:30 AM – 11 PM • 100% Vegetarian • +91 98227 34959</p>
+  <p>Cosy interiors • Ideal for conversations, coffee and indulgent meals</p>
+</footer>
+
+</body>
+</html>
